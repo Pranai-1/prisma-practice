@@ -3,10 +3,10 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 async function main() {
-await prisma.user.create({
+await prisma.post.create({
     data:{
-        email:"pranai@gmail.com",
-        name:"pranai"
+       title:"fun",
+       authorId:1
     }
  })
 }
